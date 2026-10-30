@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <meta name="description" content="A simple calculator built with HTML, CSS and JavaScript.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="calculator">
+    <div class="display">
+      <div class="history" id="history"></div>
+      <div class="current" id="current">0</div>
+    </div>
+
+    <div class="keys">
+      <button class="key light" data-action="clear">C</button>
+      <button class="key light" data-action="delete">&#9003;</button>
+      <button class="key light" data-action="percent">%</button>
+      <button class="key op" data-op="/">&divide;</button>
+
+      <button class="key" data-num="7">7</button>
+      <button class="key" data-num="8">8</button>
+      <button class="key" data-num="9">9</button>
+      <button class="key op" data-op="*">&times;</button>
+
+      <button class="key" data-num="4">4</button>
+      <button class="key" data-num="5">5</button>
+      <button class="key" data-num="6">6</button>
+      <button class="key op" data-op="-">&minus;</button>
+
+      <button class="key" data-num="1">1</button>
+      <button class="key" data-num="2">2</button>
+      <button class="key" data-num="3">3</button>
+      <button class="key op" data-op="+">+</button>
+
+      <button class="key zero" data-num="0">0</button>
+      <button class="key" data-action="dot">.</button>
+      <button class="key equals" data-action="equals">=</button>
+    </div>
+  </main>
+
+  <p class="hint">You can use your keyboard too</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
